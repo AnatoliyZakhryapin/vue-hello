@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3"></script>
+    <title>Vue Hello</title>
+    <style>
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .col {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="app">
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1>{{ message }}</h1>
+                        <img :src="imageLink">
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <script src="appBonus.js"></script>
+</body>
+</html>
